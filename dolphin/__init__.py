@@ -1,10 +1,10 @@
 from datetime import date
 
-class Alligator:
+class Dolphin:
   def __init__(self, name, species, food):
     self.name = ""
     self.species = ""
-    self.slithering = True
+    self.swimming = True
     self.date_added = date.today()
     self.food = food
 
