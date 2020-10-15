@@ -1,6 +1,6 @@
 from datetime import date
 
-class Alligator:
+class Rat_Snake:
   def __init__(self, name, species, food):
     self.name = ""
     self.species = ""

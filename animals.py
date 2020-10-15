@@ -1,172 +1,50 @@
 from datetime import date
 
-class Llama:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.walking = True
-    self.date_added = date.today()
+from alligator import Alligator
+from copperhead import Copperhead
+from dolphin import Dolphin
+from eel import Eel
+from giraffe import Giraffe
+from goldfish import Goldfish
+from hippo import Hippo
+from llama import Llama
+from monkey import Monkey
+from octopus import Octopus
+from rat_snake import Rat_Snake
+from salamander import Salamander
+from snail import Snail
+from starfish import Starfish
+from tiger import Tiger
 
-class Tiger:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.walking = True
-    self.date_added = date.today()
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "afternoon")
 
-class Giraffe:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.walking = True
-    self.date_added = date.today()
+tony = Tiger("Tony", "hungry tiger", "morning")
 
-class Hippo:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.walking = True
-    self.date_added = date.today()
+ned = Giraffe("Ned", "friendly giraffe", "evening")
 
-class Monkey:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.walking = True
-    self.date_added = date.today()
-    self.date_added = date.today()
+henry = Hippo("Henry", "hippopotamus", "afternoon")
 
-class Dolphin:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.swimming = True
-    self.date_added = date.today()
+george = Monkey("George", "chimpanzee", "morning")
 
-class Starfish:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.swimming = True
-    self.date_added = date.today()
+flipper = Dolphin("Flipper", "wild dolphin")
 
-class Eel:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.swimming = True
-    self.date_added = date.today()
+buddha = Starfish("Buddha", "golden starfish")
 
-class Octopus:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.swimming = True
-    self.date_added = date.today()
+ed = Eel("Ed", "electric eel")
 
-class Goldfish:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.swimming = True
-    self.date_added = date.today()
+gus = Octopus("Gus", "wild octopus")
 
-class Copperhead:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.slithering = True
-    self.date_added = date.today()
+jerry = Goldfish("Jerry", "wild octopus")
 
-class Rat_Snake:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.slithering = True
-    self.date_added = date.today()
+carl = Copperhead("Carl", "copperhead snake")
 
-class Salamander:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.slithering = True
-    self.date_added = date.today()
+ren = Rat_Snake("Ren", "poisonous rattler")
 
-class Snail:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.slithering = True
-    self.date_added = date.today()
+sally = Salamander("Sally", "domestic salamander")
 
-class Alligator:
-  def __init__(self):
-    self.name = ""
-    self.species = ""
-    self.slithering = True
-    self.date_added = date.today()
+charlie = Snail("Charile", "domestic snail")
 
-
-miss_fuzz = Llama()
-miss_fuzz.name = "Miss Fuzz"
-miss_fuzz.species = "domestic llama"
-
-tony = Tiger()
-tony.name = "Tony"
-tony.species = "hungry tiger"
-
-ned = Giraffe()
-ned.name = "Ned"
-ned.species = "friendly giraffe"
-
-henry = Hippo()
-henry.name = "Henry"
-henry.species = "hippopotamus"
-
-george = Monkey()
-george.name = "George"
-george.species = "chimpanzee"
-
-flipper = Dolphin()
-flipper.name = "Flipper"
-flipper.species = "wild dolphin"
-
-buddha = Starfish()
-buddha.name = "Buddha"
-buddha.species = "golden starfish"
-
-ed = Eel()
-ed.name = "Ed"
-ed.species = "electric eel"
-
-gus = Octopus()
-gus.name = "Gus"
-gus.species = "wild octopus"
-ed.species = "electric eel"
-
-jerry = Goldfish()
-jerry.name = "Jerry"
-jerry.species = "wild octopus"
-
-carl = Copperhead()
-carl.name = "Carl"
-carl.species = "copperhead snake"
-
-ren = Rat_Snake()
-ren.name = "Ren"
-ren.species = "poisonous rattler"
-
-sally = Salamander()
-sally.name = "Sally"
-sally.species = "domestic salamander"
-
-charlie = Snail()
-charlie.name = "Charile"
-charlie.species = "domestic snail"
-
-al = Alligator()
-al.name = "Al"
-al.species = "dangerous gator"
+al = Alligator("Al", "dangerous gator")
 
 print(miss_fuzz)
 print(tony)
