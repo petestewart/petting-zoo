@@ -1,0 +1,10 @@
+{
+  "sqltools.connections": [
+    {
+      "previewLimit": 50,
+      "driver": "SQLite",
+      "name": "Petting Zoo DB",
+      "database": "${workspaceFolder:petting_zoo}/petting_zoo.db"
+    }
+  ]
+}
