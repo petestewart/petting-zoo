@@ -1,0 +1,14 @@
+class PettingZoo:
+  def __init__(self, name):
+      self.attraction_name = name
+      self.description = "cute and fuzzy critters to cuddle"
+      self.animals = list()
+      self.add_animal = self.animals.append
+
+  def __str__(self):
+    attraction_animals = []
+    for animal in self.animals:
+      # attraction_animals = attraction_animals + animal.name + ", "
+      attraction_animals.append(f" * {animal.name}")
+    animals_list = ('\n'.join(map(str, attraction_animals)))
+    return f"{self.attraction_name} is where you'll find {self.description} like \n{animals_list}"

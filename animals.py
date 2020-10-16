@@ -1,63 +1,15 @@
-from datetime import date
-
-from alligator import Alligator
-from copperhead import Copperhead
-from dolphin import Dolphin
-from eel import Eel
-from giraffe import Giraffe
-from goldfish import Goldfish
-from hippo import Hippo
-from llama import Llama
-from monkey import Monkey
-from octopus import Octopus
-from rat_snake import Rat_Snake
-from salamander import Salamander
-from snail import Snail
-from starfish import Starfish
-from tiger import Tiger
-
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "afternoon")
-
-tony = Tiger("Tony", "hungry tiger", "morning")
-
-ned = Giraffe("Ned", "friendly giraffe", "evening")
-
-henry = Hippo("Henry", "hippopotamus", "afternoon")
-
-george = Monkey("George", "chimpanzee", "morning")
-
-flipper = Dolphin("Flipper", "wild dolphin")
-
-buddha = Starfish("Buddha", "golden starfish")
-
-ed = Eel("Ed", "electric eel")
-
-gus = Octopus("Gus", "wild octopus")
-
-jerry = Goldfish("Jerry", "wild octopus")
-
-carl = Copperhead("Carl", "copperhead snake")
-
-ren = Rat_Snake("Ren", "poisonous rattler")
-
-sally = Salamander("Sally", "domestic salamander")
-
-charlie = Snail("Charile", "domestic snail")
-
-al = Alligator("Al", "dangerous gator")
-
-print(miss_fuzz)
-print(tony)
-print(ned)
-print(henry)
-print(george)
-print(flipper)
-print(buddha)
-print(ed)
-print(gus)
-print(jerry)
-print(carl)
-print(ren)
-print(sally)
-print(charlie)
-print(al)
+from models.animals.alligator import Alligator
+from models.animals.copperhead import Copperhead
+from models.animals.dolphin import Dolphin
+from models.animals.eel import Eel
+from models.animals.giraffe import Giraffe
+from models.animals.goldfish import Goldfish
+from models.animals.hippo import Hippo
+from models.animals.llama import Llama
+from models.animals.monkey import Monkey
+from models.animals.octopus import Octopus
+from models.animals.rat_snake import Rat_Snake
+from models.animals.salamander import Salamander
+from models.animals.snail import Snail
+from models.animals.starfish import Starfish
+from models.animals.tiger import Tiger
