@@ -1,23 +1,37 @@
 from models.attractions.wetlands import Wetlands
 from models.attractions.petting_zoo import PettingZoo
 from models.attractions.snake_pit import SnakePit
-from animals import Alligator, Copperhead, Dolphin, Eel, Giraffe, Goldfish, Hippo, Llama, Monkey, Octopus, Rat_Snake, Salamander, Snail, Starfish, Tiger
+from models.animals.alligator import Alligator
+from models.animals.copperhead import Copperhead
+from models.animals.dolphin import Dolphin
+from models.animals.eel import Eel
+from models.animals.giraffe import Giraffe
+from models.animals.goldfish import Goldfish
+from models.animals.hippo import Hippo
+from models.animals.llama import Llama
+from models.animals.monkey import Monkey
+from models.animals.octopus import Octopus
+from models.animals.rat_snake import Rat_Snake
+from models.animals.salamander import Salamander
+from models.animals.snail import Snail
+from models.animals.starfish import Starfish
+from models.animals.tiger import Tiger
 
-miss_fuzz = Llama("Miss Fuzz", "domestic llama", "afternoon")
-tony = Tiger("Tony", "hungry tiger", "morning")
-ned = Giraffe("Ned", "friendly giraffe", "evening")
-henry = Hippo("Henry", "hippopotamus", "afternoon")
-george = Monkey("George", "chimpanzee", "morning", 527)
-flipper = Dolphin("Flipper", "wild dolphin", "afternoon")
-buddha = Starfish("Buddha", "golden starfish", "morning")
-ed = Eel("Ed", "electric eel", "evening")
-gus = Octopus("Gus", "wild octopus", "evening")
-jerry = Goldfish("Jerry", "wild octopus", "morning")
-carl = Copperhead("Carl", "copperhead snake", "morning")
-ren = Rat_Snake("Ren", "poisonous rattler", "afternoon")
-sally = Salamander("Sally", "domestic salamander", "afternoon")
-charlie = Snail("Charile", "domestic snail", "afternoon")
-al = Alligator("Al", "dangerous gator", "afternoon")
+miss_fuzz = Llama("Miss Fuzz", "domestic llama", "afternoon", "barley hay", 1234)
+tony = Tiger("Tony", "hungry tiger", "morning", "cat food", 234)
+ned = Giraffe("Ned", "friendly giraffe", "evening", "leaves", 987)
+henry = Hippo("Henry", "hippopotamus", "afternoon", "cereal", 856)
+george = Monkey("George", "chimpanzee", "morning", "banana", 527)
+flipper = Dolphin("Flipper", "wild dolphin", "afternoon", "plants", 2345)
+buddha = Starfish("Buddha", "golden starfish", "morning", "fish food", 6723)
+ed = Eel("Ed", "electric eel", "evening", "algae", 8976234)
+gus = Octopus("Gus", "wild octopus", "evening", "pond scum", 9087234)
+jerry = Goldfish("Jerry", "wild octopus", "morning", "fish food", 9873)
+carl = Copperhead("Carl", "copperhead snake", "morning", "mice", 987234)
+ren = Rat_Snake("Ren", "poisonous rattler", "afternoon", "mice", 234345)
+sally = Salamander("Sally", "domestic salamander", "afternoon", "plants", 1)
+charlie = Snail("Charile", "domestic snail", "afternoon", "bugs", 7)
+al = Alligator("Al", "dangerous gator", "afternoon", "anything", 43)
 
 slither_inn = SnakePit("Slither Inn")
 varmint_village = PettingZoo("Varmint Village")
@@ -65,3 +79,7 @@ print(george.chip_number)
 print(slither_inn.last_critter_added)
 print(varmint_village.last_critter_added)
 print(water_town.last_critter_added)
+
+al.feed()
+carl.feed()
+flipper.feed()

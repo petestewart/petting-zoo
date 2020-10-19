@@ -1,15 +1,21 @@
-from models.animals.alligator import Alligator
-from models.animals.copperhead import Copperhead
-from models.animals.dolphin import Dolphin
-from models.animals.eel import Eel
-from models.animals.giraffe import Giraffe
-from models.animals.goldfish import Goldfish
-from models.animals.hippo import Hippo
-from models.animals.llama import Llama
-from models.animals.monkey import Monkey
-from models.animals.octopus import Octopus
-from models.animals.rat_snake import Rat_Snake
-from models.animals.salamander import Salamander
-from models.animals.snail import Snail
-from models.animals.starfish import Starfish
-from models.animals.tiger import Tiger
+from datetime import date
+
+class Animal:
+  def __init__(self, name, species, food, chip_num):
+    self.name = name
+    self.species = species
+    self.food = food
+    self.__chip_number = chip_num
+    self.date_added = date.today()
+
+  def feed(self):
+      print(f'{self.name} was fed {self.food} on {date.today().strftime("%m/%d/%Y")}')
+      
+  @property
+  def chip_number(self):
+    return self.__chip_number
+
+  @chip_number.setter
+  def chip_number(self, num):
+    pass
+  
