@@ -1,21 +1,5 @@
-from models.attractions.wetlands import Wetlands
-from models.attractions.petting_zoo import PettingZoo
-from models.attractions.snake_pit import SnakePit
-from models.animals.alligator import Alligator
-from models.animals.copperhead import Copperhead
-from models.animals.dolphin import Dolphin
-from models.animals.eel import Eel
-from models.animals.giraffe import Giraffe
-from models.animals.goldfish import Goldfish
-from models.animals.hippo import Hippo
-from models.animals.llama import Llama
-from models.animals.monkey import Monkey
-from models.animals.octopus import Octopus
-from models.animals.rat_snake import Rat_Snake
-from models.animals.salamander import Salamander
-from models.animals.snail import Snail
-from models.animals.starfish import Starfish
-from models.animals.tiger import Tiger
+from animals import *
+from attractions import *
 
 miss_fuzz = Llama("Miss Fuzz", "domestic llama", "afternoon", "barley hay", 1234)
 tony = Tiger("Tony", "hungry tiger", "morning", "cat food", 234)
@@ -33,8 +17,8 @@ sally = Salamander("Sally", "domestic salamander", "afternoon", "plants", 1)
 charlie = Snail("Charile", "domestic snail", "afternoon", "bugs", 7)
 al = Alligator("Al", "dangerous gator", "afternoon", "anything", 43)
 
-slither_inn = SnakePit("Slither Inn")
 varmint_village = PettingZoo("Varmint Village")
+slither_inn = SnakePit("Slither Inn")
 water_town = Wetlands("Water Town")
 
 slither_inn.add_animal(carl)
